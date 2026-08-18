@@ -1,17 +1,20 @@
 <div align="center">
 
 # ⚡ NUDRIK RAJU
-<a href="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=620&lines=Full+Stack+Developer+%7C+AI%2FML+Engineer;React+%7C+Node.js+%7C+Express+%7C+MongoDB+%7C+PostgreSQL;PyTorch+%7C+TensorFlow+%7C+Deep+Learning;Data+Structures+%26+Algorithms+Enthusiast">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=620&lines=Full+Stack+Developer+%7C+AI%2FML+Engineer;React+%7C+Node.js+%7C+Express+%7C+MongoDB+%7C+PostgreSQL;PyTorch+%7C+TensorFlow+%7C+Deep+Learning;Data+Structures+%26+Algorithms+Enthusiast" alt="Typing SVG" />
+### **Full Stack Developer | AI/ML Engineer | DSA Enthusiast**
+*Building intelligent applications with scalable code, machine learning, and modern LLM technologies.*
+
+<br/>
+
+<a href="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full+Stack+Developer+%7C+AI%2FML+Engineer;React+%7C+Node.js+%7C+Express+%7C+MongoDB+%7C+PostgreSQL;PyTorch+%7C+TensorFlow+%7C+Deep+Learning;Data+Structures+%26+Algorithms+Enthusiast;Building+Intelligent+Scalable+Applications">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full+Stack+Developer+%7C+AI%2FML+Engineer;React+%7C+Node.js+%7C+Express+%7C+MongoDB+%7C+PostgreSQL;PyTorch+%7C+TensorFlow+%7C+Deep+Learning;Data+Structures+%26+Algorithms+Enthusiast;Building+Intelligent+Scalable+Applications" alt="Typing SVG" />
 </a>
 
-<p align="center">
-  <a href="https://github.com/nudrik">
-    <img src="https://komarev.com/ghpvc/?username=nudrik&color=58a6ff&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
-  </a>
-  <img src="https://img.shields.io/badge/Status-Active_%26_Open_to_Opportunities-3fb950?style=flat-square&logo=githubactions&logoColor=white" alt="Status" />
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License" />
-</p>
+<br/>
+
+### [🚀 Projects](#-featured-engineering-projects) &nbsp;•&nbsp; [👤 About](#-engineering-profile--about-me) &nbsp;•&nbsp; [🤖 AI & ML](#-ai--machine-learning-specializations) &nbsp;•&nbsp; [⚡ Tech Stack](#-tech-stack--arsenal) &nbsp;•&nbsp; [📊 Analytics](#-github-analytics--telemetry) &nbsp;•&nbsp; [🧠 Neural Graph](#-neural-network-architecture-visualizer) &nbsp;•&nbsp; [✉️ Contact](#-connect-with-me)
+
+<br/>
 
 <!-- Quick Action Badges -->
 <p align="center">
@@ -38,6 +41,14 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/nudrik">
+    <img src="https://komarev.com/ghpvc/?username=nudrik&color=58a6ff&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+  </a>
+  <img src="https://img.shields.io/badge/Status-Active_%26_Open_to_Opportunities-3fb950?style=flat-square&logo=githubactions&logoColor=white" alt="Status" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License" />
+</p>
+
 <!-- Hero Visual Banner -->
 <a href="https://nudrik.github.io/PORTFOLIO/">
   <img src="banner.png" alt="Nudrik Raju - Full Stack Developer & AI/ML Engineer" width="100%" />
@@ -46,8 +57,7 @@
 <br/>
 
 ```bash
-📍 Focus: Scalable Full Stack Web Applications & Deep Learning Neural Networks
-✉️ Contact: nudrikraju396@gmail.com  |  🌐 Live: https://nudrik.github.io/PORTFOLIO/
+✉️ Email: nudrikraju396@gmail.com  |  📍 Status: Active & Open to Opportunities  |  🌐 Live: https://nudrik.github.io/PORTFOLIO/
 ```
 
 ---
@@ -59,7 +69,7 @@
 <br/>
 
 ### 🩸 [Smart Blood Bank Management System](https://smart-blood-bank-ln0b.onrender.com/)
-> **Real-Time Healthcare Coordination & Blood Donor-Recipient Network**
+> **Real-Time Healthcare Coordination & Blood Donor Platform**
 
 <p align="left">
   <a href="https://smart-blood-bank-ln0b.onrender.com/" target="_blank">
@@ -67,20 +77,24 @@
   </a>
 </p>
 
-An intelligent healthcare platform engineered to streamline blood donor-recipient matching, real-time inventory management across all major blood types (`A+`, `A-`, `B+`, `B-`, `AB+`, `AB-`, `O+`, `O-`), emergency request dispatches, and hospital administration.
+An intelligent full-stack healthcare application engineered to streamline donor-recipient coordination, blood bank inventory levels across all major blood types (`A+`, `A-`, `B+`, `B-`, `AB+`, `AB-`, `O+`, `O-`), emergency request dispatching, and hospital administration with high availability.
 
-- **🌐 Live Production Deployment:** Hosted on **Render Cloud** with continuous health monitoring and 99.9% uptime.
-- **⚡ Real-Time Stock Telemetry:** Instant blood unit inventory tracking with automated shortage alerts and threshold warnings.
-- **🎯 Smart Compatibility Engine:** Algorithmic donor-recipient compatibility calculation with proximity notifications.
-- **🔒 Multi-Portal Security:** Dedicated portals for Hospital Admins, Registered Donors, and Patients with stateless JWT authentication.
-- **🏗️ Resilient Microservices:** RESTful API backend with schema validation, sanitized request handling, and optimized database queries.
+- **🌐 Live Deployment:** Fully hosted on **Render Cloud** with 99.9% uptime and continuous health monitoring.
+- **⚡ Real-Time Inventory:** Real-time blood group stock tracking across all blood groups with automatic threshold alerts.
+- **🎯 Smart Matching Engine:** Instant donor-recipient compatibility calculation and automated emergency alert dispatches.
+- **🔒 Role-Based Dashboards:** Multi-portal authentication for Hospital Administrators, Donors, and Patients with stateless JWT authorization.
+- **🏗️ Resilient Backend:** RESTful API microservice with strict data sanitization, schema validation, and optimized DB queries.
 
-```
-Frontend:  React 18  •  Tailwind CSS  •  Axios  •  Lucide Icons
-Backend:   Node.js   •  Express.js    •  JWT    •  RESTful APIs
-Database:  MongoDB   •  PostgreSQL    •  Cloud Storage
-DevOps:    Render Cloud  •  Git       •  Docker Ready
-```
+**Tech Stack & Architecture:**
+<p align="left">
+  <img src="https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
+  <img src="https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white" alt="Render" />
+</p>
 
 <br/>
 
@@ -89,7 +103,7 @@ DevOps:    Render Cloud  •  Git       •  Docker Ready
 <br/>
 
 ### 🌐 [Interactive Developer Portfolio & AI/ML Showcase](https://nudrik.github.io/PORTFOLIO/)
-> **Dynamic Profiler with Interactive Neural Network Visualizer & Live GitHub Telemetry**
+> **Dynamic Profiler with Live GitHub Telemetry & Neural Visualizer**
 
 <p align="left">
   <a href="https://nudrik.github.io/PORTFOLIO/" target="_blank">
@@ -97,17 +111,22 @@ DevOps:    Render Cloud  •  Git       •  Docker Ready
   </a>
 </p>
 
-A high-performance modern developer portfolio built with React 18, TypeScript, and Tailwind CSS. Showcases production full-stack systems, deep learning architectures, algorithm benchmarks, and live telemetry.
+A modern, dynamic developer portfolio built with React 18 and TypeScript, showcasing production full-stack systems, deep learning architectures, algorithms benchmarks, and real-time GitHub telemetry.
 
-- **⚡ Automated CI/CD:** Continuous deployment on **GitHub Pages** powered by GitHub Actions.
-- **🧠 Neural Network Visualizer:** Interactive Deep CNN & Vision Transformer activation pulse simulator with forward pass controls.
-- **📄 Interactive ATS Resume:** In-app multi-mode reader with Dark Developer Theme, White ATS Paper Layout, and direct PDF download.
-- **📊 GitHub Telemetry:** Dynamic GitHub commit velocity, streak calculations, and repository activity metrics.
+- **⚡ Live Deployment:** Continuous deployment on **GitHub Pages** via automated GitHub Actions CI/CD workflows.
+- **🧠 Neural Network Canvas:** Interactive Deep CNN & Vision Transformer activation pulse simulator with forward pass controls.
+- **📊 Live GitHub Telemetry:** Real-time commit velocity analysis, contribution streaks, repo stars, and top language telemetry.
+- **📄 Interactive Resume:** In-app ATS resume inspector with multi-mode reader (Dark & Paper modes), direct PDF download, and print styles.
+- **🎨 Pure Dark Mode Aesthetics:** Engineered with mathematical typography, zero-bloat modular design, and responsive layout.
 
-```
-Frontend:  React 18  •  TypeScript  •  Tailwind CSS  •  HTML5 Canvas
-Tools:     Vite      •  GitHub Actions CI/CD         •  GitHub REST API
-```
+**Tech Stack & Architecture:**
+<p align="left">
+  <img src="https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+</p>
 
 <br/>
 
@@ -115,27 +134,48 @@ Tools:     Vite      •  GitHub Actions CI/CD         •  GitHub REST API
 
 ## 👤 Engineering Profile & About Me
 
-- **💻 Scalable Full-Stack Engineering:** Passionate about crafting modular, resilient full-stack applications and solving complex algorithmic challenges with clean Data Structures & Algorithms.
-- **🤖 Deep Learning & AI Research:** Actively engineering production LLM applications, multimodal generative pipelines, autonomous agent architectures, and deep convolutional neural networks.
-- **🤝 High-Impact Collaboration:** Excited to collaborate on impactful open-source and enterprise projects across Web Development, Artificial Intelligence, and Machine Learning systems.
+### 💻 Engineering Profile
+- **🚀 Scalable Full-Stack Engineering:** Passionate about crafting modular, resilient full-stack applications and solving algorithmic problems through clean DSA principles.
+- **🤝 High-Impact Collaboration:** Excited to collaborate on impactful projects across Web Development, Artificial Intelligence, and Machine Learning systems.
 - **📖 Continuous Innovation:** Actively exploring advanced DSA paradigms, distributed backend architectures, Machine Learning pipelines, and Generative AI agents.
 - **💡 Value-Driven Solutions:** Focused on engineering high-utility software that solves tangible real-world problems with fluid user experiences.
-- **💬 Technical Discussions:** Ask me about Full Stack Development (React, Node.js, Express), Python, Java, Data Structures, and AI/ML fundamentals.
+- **💬 Consult & Chat:** Ask me about Full Stack Development (React, Node.js, Express), Python, Java, Data Structures, and AI/ML fundamentals.
+- **⚡ Beyond the Terminal:** Outside of coding, I enjoy reading technical literature, staying ahead with bleeding-edge tech trends, and self-improvement.
+- **📫 Direct Inquiries:** [`nudrikraju396@gmail.com`](mailto:nudrikraju396@gmail.com)
+
+<br/>
+
+### 🧠 Current Focus: GenAI & ML
+*Actively engineering production LLM applications, multimodal generative pipelines, autonomous agent architectures, and deep neural algorithms.*
+
+<br/>
+
+### 📊 Top Languages Telemetry
+| Language | Ecosystem & Proficiency | Badge |
+| :--- | :--- | :--- |
+| **TypeScript / JS** | React 18, Node.js, Express.js, Modern ES6+ Web Applications | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
+| **Python** | PyTorch, TensorFlow, Scikit-Learn, Deep Neural Architectures | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| **Java** | Object-Oriented Programming, Data Structures & Algorithms | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
+| **C / Low-Level** | Algorithmic Problem Solving, Memory & Data Structures | ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white) |
+| **SQL & NoSQL** | Relational Schemas, Indexing, MongoDB & PostgreSQL | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
 
 <br/>
 
 ---
 
 ## 🤖 AI & Machine Learning Specializations
+*Building intelligent applications with AI, Machine Learning, and modern LLM technologies across 6 core domains.*
+
+<br/>
 
 | Domain | Core Focus & Pillars | Key Technologies |
 | :--- | :--- | :--- |
-| **⚡ Machine Learning** | Supervised & unsupervised learning, statistical model training, predictive analytics, regression, and classification pipelines. | `TensorFlow`, `Scikit-Learn`, `Pandas`, `NumPy` |
-| **🧠 Deep Learning** | Deep neural networks, backpropagation, convolutional networks (CNNs), residual networks, and transfer learning architectures. | `PyTorch`, `Keras`, `Neural Networks`, `CUDA` |
-| **✨ Generative AI** | Prompt engineering, multimodal reasoning, retrieval-augmented generation (RAG), embeddings, and context optimization. | `OpenAI APIs`, `HuggingFace`, `RAG Pipelines`, `Vector DBs` |
-| **🧩 LLM Applications** | Production applications powered by Large Language Models with structured output validation, memory, and function calling. | `Transformers`, `GPT-4`, `Tool Calling`, `ChromaDB` |
-| **👁️ Computer Vision** | Image processing, feature extraction, object detection, segmentation, and real-time video stream analysis. | `OpenCV`, `YOLO`, `Image Filtering`, `Bounding Box Detection` |
-| **🤖 AI Agents** | Autonomous multi-step reasoning agents, LangChain/LangGraph orchestration, state machines, and task planning. | `LangChain`, `LangGraph`, `Autonomous Agents`, `Tool Calling` |
+| **⚡ Machine Learning** | Supervised & unsupervised learning, statistical model training, predictive analytics, regression, and classification pipelines.<br/>*Pillars: Model Evaluation, Feature Engineering, Regression & Classification* | `TensorFlow`, `Scikit-Learn`, `Pandas`, `NumPy` |
+| **🧠 Deep Learning** | Deep neural networks, backpropagation, convolutional networks (CNNs), residual networks, and transfer learning architectures.<br/>*Pillars: CNN Architectures, Optimization Algorithms, Loss Function Tuning* | `PyTorch`, `Keras`, `Neural Networks`, `CUDA` |
+| **✨ Generative AI** | Next-generation prompt engineering, multimodal reasoning, retrieval-augmented generation (RAG), and fine-tuning.<br/>*Pillars: Context Engineering, Embeddings, Synthetic Data Generation* | `OpenAI APIs`, `HuggingFace`, `RAG Pipelines`, `Vector DBs` |
+| **🧩 LLM Applications** | Production applications powered by Large Language Models with structured output validation, memory, and function calling.<br/>*Pillars: Structured JSON Schemas, Tool Calling & Agents, Context Optimization* | `Transformers`, `GPT-4`, `Tool Calling`, `ChromaDB` |
+| **👁️ Computer Vision** | Image processing, feature extraction, object detection, segmentation, and real-time video stream analysis.<br/>*Pillars: Real-time Object Detection, Edge Detection, Image Segmentation* | `OpenCV`, `YOLO`, `Image Filtering`, `Bounding Box Detection` |
+| **🤖 AI Agents** | Autonomous multi-step reasoning agents, LangChain/LangGraph orchestration, state machines, and task planning.<br/>*Pillars: Multi-agent Collaboration, State Machines, Task Planning & Execution* | `LangChain`, `LangGraph`, `Autonomous Agents`, `Tool Calling` |
 
 <br/>
 
@@ -196,13 +236,17 @@ Tools:     Vite      •  GitHub Actions CI/CD         •  GitHub REST API
 
 ---
 
-## 📊 GitHub Analytics & Engineering Velocity
+## 📊 GitHub Analytics & Telemetry
 
 <div align="center">
 
-<!-- Verified Live Streak Stats Widget -->
+<!-- Verified Streak Stats Widget & Activity Graph -->
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=nudrik&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=e63946&currStreakLabel=58a6ff" alt="GitHub Contribution Streak" width="98%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nudrik&theme=tokyo-night&hide_border=true&area=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=e63946" alt="Contribution Graph" width="98%" />
 </p>
 
 <!-- Verified Real-Time Engineering Highlights Matrix -->
