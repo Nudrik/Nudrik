@@ -1,0 +1,6 @@
+{
+  "name": "Nudrik Developer Profile",
+  "description": "Interactive developer portfolio, GitHub analytics, AI/ML showcase, and resume viewer for Nudrik Raju.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

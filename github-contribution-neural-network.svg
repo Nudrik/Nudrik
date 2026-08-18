@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="100%" height="100%" style="background-color: #090d13; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', monospace;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="50%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#070a0f"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="neonGlowBlue" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neonGlowGreen" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neonGlowPurple" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neonGlowAmber" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Synapse Gradients -->
+    <linearGradient id="synapseBlueGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#3fb950"/>
+    </linearGradient>
+
+    <linearGradient id="synapseGreenPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3fb950"/>
+      <stop offset="100%" stop-color="#bc8cff"/>
+    </linearGradient>
+
+    <linearGradient id="synapsePurpleAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#bc8cff"/>
+      <stop offset="100%" stop-color="#f0883e"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="matrixGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" fill="#30363d" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .synapse-path {
+      stroke-dasharray: 6 10;
+      animation: dashPulse 2.5s linear infinite;
+    }
+    .synapse-fast {
+      stroke-dasharray: 4 8;
+      animation: dashPulse 1.4s linear infinite;
+    }
+    .skip-conn {
+      stroke-dasharray: 8 6;
+      animation: dashPulse 3s linear infinite reverse;
+    }
+    .laser-scan {
+      animation: scanLaser 3.5s ease-in-out infinite alternate;
+    }
+    .pulse-node {
+      animation: nodeBreathe 2s ease-in-out infinite alternate;
+    }
+    .matrix-pulse {
+      animation: matrixGlow 2.5s ease-in-out infinite;
+    }
+    .signal-packet {
+      animation: packetTravel 3s linear infinite;
+    }
+
+    @keyframes dashPulse {
+      0% { stroke-dashoffset: 64; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes scanLaser {
+      0% { transform: translateY(0px); opacity: 0.9; }
+      100% { transform: translateY(110px); opacity: 0.3; }
+    }
+    @keyframes nodeBreathe {
+      0% { r: 5; opacity: 0.85; }
+      100% { r: 7.5; opacity: 1; filter: drop-shadow(0 0 6px #58a6ff); }
+    }
+    @keyframes matrixGlow {
+      0% { opacity: 0.4; }
+      50% { opacity: 0.9; filter: drop-shadow(0 0 8px #3fb950); }
+      100% { opacity: 0.4; }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="960" height="380" rx="14" fill="url(#bgGrad)" stroke="#30363d" stroke-width="1.5"/>
+  <rect width="960" height="380" rx="14" fill="url(#matrixGrid)"/>
+
+  <!-- Top Status Bar & Architecture Header -->
+  <g transform="translate(24, 20)">
+    <!-- Circuit indicator -->
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#238636" filter="url(#neonGlowGreen)"/>
+    <text x="20" y="10" fill="#e6edf3" font-size="12" font-weight="700" letter-spacing="1">DEEP CNN + VISION TRANSFORMER HYBRID ARCHITECTURE</text>
+    <text x="590" y="10" fill="#8b949e" font-size="11" font-family="monospace">FORWARD PASS • ACTIVATION: GeLU • RESNET SHORTCUTS</text>
+    <line x1="0" y1="20" x2="912" y2="20" stroke="#21262d" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== STAGE 1: INPUT 3D TENSOR ==================== -->
+  <g transform="translate(45, 80)">
+    <!-- Label -->
+    <text x="35" y="-12" fill="#58a6ff" font-size="11" font-weight="700" font-family="monospace" text-anchor="middle">STAGE 1: INPUT</text>
+    <text x="35" y="1" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="middle">Tensor [B, 3, 224, 224]</text>
+
+    <!-- Isometric Tensor Planes -->
+    <!-- Plane 3 (Back) -->
+    <polygon points="20,20 65,5 65,135 20,150" fill="#1f6feb" fill-opacity="0.15" stroke="#58a6ff" stroke-width="1" stroke-dasharray="3 3"/>
+    <!-- Plane 2 (Mid) -->
+    <polygon points="10,35 55,20 55,150 10,165" fill="#1f6feb" fill-opacity="0.25" stroke="#58a6ff" stroke-width="1.2"/>
+    <!-- Plane 1 (Front Active Grid) -->
+    <polygon points="0,50 45,35 45,165 0,180" fill="#0d1117" stroke="#58a6ff" stroke-width="1.8" filter="url(#neonGlowBlue)"/>
+
+    <!-- Grid cells on front plane -->
+    <g stroke="#388bfd" stroke-width="0.8" opacity="0.6">
+      <line x1="15" y1="45" x2="15" y2="175"/>
+      <line x1="30" y1="40" x2="30" y2="170"/>
+      <line x1="0" y1="80" x2="45" y2="65"/>
+      <line x1="0" y1="110" x2="45" y2="95"/>
+      <line x1="0" y1="145" x2="45" y2="130"/>
+    </g>
+
+    <!-- Laser Kernel Scan Box -->
+    <g class="laser-scan">
+      <polygon points="5,55 35,45 35,85 5,95" fill="#58a6ff" fill-opacity="0.4" stroke="#79c0ff" stroke-width="1.5"/>
+      <line x1="0" y1="75" x2="45" y2="60" stroke="#ffffff" stroke-width="1.5" filter="url(#neonGlowBlue)"/>
+    </g>
+
+    <text x="22" y="200" fill="#8b949e" font-size="9.5" font-family="monospace" text-anchor="middle">Input Stream</text>
+  </g>
+
+  <!-- SYNAPTIC CONVERGENCE 1 -> 2 -->
+  <g stroke="url(#synapseBlueGreen)" stroke-width="1.4" fill="none" opacity="0.8">
+    <path d="M 115 125 C 145 110, 155 95, 185 90" class="synapse-path"/>
+    <path d="M 115 145 C 145 140, 155 130, 185 125" class="synapse-fast"/>
+    <path d="M 115 165 C 145 160, 155 165, 185 165" class="synapse-path"/>
+    <path d="M 115 185 C 145 180, 155 195, 185 205" class="synapse-fast"/>
+    <path d="M 115 205 C 145 205, 155 230, 185 245" class="synapse-path"/>
+  </g>
+
+  <!-- ==================== STAGE 2: MULTI-SCALE CNN CONV BLOCKS ==================== -->
+  <g transform="translate(190, 75)">
+    <!-- Label -->
+    <text x="50" y="-7" fill="#3fb950" font-size="11" font-weight="700" font-family="monospace" text-anchor="middle">STAGE 2: CONV2D</text>
+    <text x="50" y="6" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="middle">ResNet-50 + BatchNorm</text>
+
+    <!-- Feature Maps Stack 1 -->
+    <rect x="0" y="25" width="30" height="70" rx="4" fill="#0e4429" stroke="#238636" stroke-width="1.2" opacity="0.7"/>
+    <rect x="10" y="15" width="30" height="70" rx="4" fill="#006d32" stroke="#2ea043" stroke-width="1.2" opacity="0.8"/>
+    <rect x="20" y="5" width="30" height="70" rx="4" fill="#161b22" stroke="#3fb950" stroke-width="1.6" filter="url(#neonGlowGreen)"/>
+
+    <!-- Receptive Field Matrix Kernel in Conv Block -->
+    <g transform="translate(24, 15)">
+      <rect x="0" y="0" width="22" height="22" rx="2" fill="#238636" fill-opacity="0.6" stroke="#56d364" stroke-width="1"/>
+      <line x1="7" y1="0" x2="7" y2="22" stroke="#2ea043" stroke-width="0.8"/>
+      <line x1="15" y1="0" x2="15" y2="22" stroke="#2ea043" stroke-width="0.8"/>
+      <line x1="0" y1="7" x2="22" y2="7" stroke="#2ea043" stroke-width="0.8"/>
+      <line x1="0" y1="15" x2="22" y2="15" stroke="#2ea043" stroke-width="0.8"/>
+      <circle cx="11" cy="11" r="3" fill="#ffffff" filter="url(#neonGlowGreen)"/>
+    </g>
+
+    <!-- Feature Maps Stack 2 (Downsampled Pooling) -->
+    <rect x="58" y="55" width="24" height="60" rx="4" fill="#0e4429" stroke="#238636" stroke-width="1.2" opacity="0.7"/>
+    <rect x="66" y="45" width="24" height="60" rx="4" fill="#006d32" stroke="#2ea043" stroke-width="1.2" opacity="0.8"/>
+    <rect x="74" y="35" width="24" height="60" rx="4" fill="#161b22" stroke="#3fb950" stroke-width="1.6" filter="url(#neonGlowGreen)"/>
+
+    <!-- Feature Maps Stack 3 (Deep Activation) -->
+    <rect x="108" y="85" width="20" height="50" rx="4" fill="#0e4429" stroke="#238636" stroke-width="1.2" opacity="0.7"/>
+    <rect x="115" y="75" width="20" height="50" rx="4" fill="#161b22" stroke="#56d364" stroke-width="1.8" filter="url(#neonGlowGreen)"/>
+
+    <!-- MaxPool & Receptive Indicators -->
+    <path d="M 52 45 L 74 65" stroke="#3fb950" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <path d="M 52 75 L 74 95" stroke="#3fb950" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <path d="M 98 65 L 115 95" stroke="#56d364" stroke-width="1.2" stroke-dasharray="2 2"/>
+
+    <!-- Residual Skip Connection Curve -->
+    <path d="M 40 5 C 60 -20, 110 -15, 128 75" fill="none" stroke="#58a6ff" stroke-width="1.8" class="skip-conn" filter="url(#neonGlowBlue)"/>
+    <text x="82" y="-12" fill="#58a6ff" font-size="8.5" font-family="monospace" text-anchor="middle">Residual Skip + F(x)</text>
+
+    <text x="68" y="205" fill="#8b949e" font-size="9.5" font-family="monospace" text-anchor="middle">64 -> 128 -> 256ch</text>
+  </g>
+
+  <!-- SYNAPTIC CONVERGENCE 2 -> 3 -->
+  <g stroke="url(#synapseGreenPurple)" stroke-width="1.4" fill="none" opacity="0.85">
+    <path d="M 330 140 C 360 130, 375 110, 405 100" class="synapse-fast"/>
+    <path d="M 330 160 C 360 155, 375 140, 405 135" class="synapse-path"/>
+    <path d="M 330 175 C 360 175, 375 175, 405 175" class="synapse-fast"/>
+    <path d="M 330 190 C 360 195, 375 210, 405 215" class="synapse-path"/>
+    <path d="M 330 210 C 360 220, 375 240, 405 255" class="synapse-fast"/>
+  </g>
+
+  <!-- ==================== STAGE 3: MULTI-HEAD ATTENTION TRANSFORMER ==================== -->
+  <g transform="translate(410, 75)">
+    <!-- Label -->
+    <text x="65" y="-7" fill="#d2a8ff" font-size="11" font-weight="700" font-family="monospace" text-anchor="middle">STAGE 3: ATTENTION</text>
+    <text x="65" y="6" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="middle">Multi-Head Self Attention (8h)</text>
+
+    <!-- Transformer Encoder Container -->
+    <rect x="0" y="20" width="130" height="165" rx="8" fill="#161b22" fill-opacity="0.8" stroke="#bc8cff" stroke-width="1.5" filter="url(#neonGlowPurple)"/>
+
+    <!-- Attention Heads Matrix Nodes -->
+    <!-- Q, K, V Projections -->
+    <g transform="translate(15, 35)">
+      <rect x="0" y="0" width="28" height="16" rx="3" fill="#38225d" stroke="#a371f7" stroke-width="1"/>
+      <text x="14" y="11" fill="#d2a8ff" font-size="8.5" font-weight="700" font-family="monospace" text-anchor="middle">Q</text>
+
+      <rect x="36" y="0" width="28" height="16" rx="3" fill="#38225d" stroke="#a371f7" stroke-width="1"/>
+      <text x="50" y="11" fill="#d2a8ff" font-size="8.5" font-weight="700" font-family="monospace" text-anchor="middle">K</text>
+
+      <rect x="72" y="0" width="28" height="16" rx="3" fill="#38225d" stroke="#a371f7" stroke-width="1"/>
+      <text x="86" y="11" fill="#d2a8ff" font-size="8.5" font-weight="700" font-family="monospace" text-anchor="middle">V</text>
+    </g>
+
+    <!-- Attention Weights Dot-Product Matrix Grid -->
+    <g transform="translate(25, 65)">
+      <!-- Self Attention Heatmap Grid -->
+      <rect x="0" y="0" width="80" height="50" rx="4" fill="#0d1117" stroke="#6e40c9" stroke-width="1"/>
+      <!-- Glowing active weights -->
+      <rect x="4" y="4" width="16" height="10" rx="2" fill="#d2a8ff" opacity="0.85" class="matrix-pulse"/>
+      <rect x="23" y="4" width="16" height="10" rx="2" fill="#8957e5" opacity="0.4"/>
+      <rect x="42" y="4" width="16" height="10" rx="2" fill="#bc8cff" opacity="0.7"/>
+      <rect x="61" y="4" width="16" height="10" rx="2" fill="#58a6ff" opacity="0.9"/>
+
+      <rect x="4" y="18" width="16" height="10" rx="2" fill="#8957e5" opacity="0.5"/>
+      <rect x="23" y="18" width="16" height="10" rx="2" fill="#d2a8ff" opacity="0.95" class="matrix-pulse"/>
+      <rect x="42" y="18" width="16" height="10" rx="2" fill="#3fb950" opacity="0.8"/>
+      <rect x="61" y="18" width="16" height="10" rx="2" fill="#8957e5" opacity="0.3"/>
+
+      <rect x="4" y="32" width="16" height="10" rx="2" fill="#bc8cff" opacity="0.7"/>
+      <rect x="23" y="32" width="16" height="10" rx="2" fill="#58a6ff" opacity="0.85"/>
+      <rect x="42" y="32" width="16" height="10" rx="2" fill="#d2a8ff" opacity="0.9" class="matrix-pulse"/>
+      <rect x="61" y="32" width="16" height="10" rx="2" fill="#3fb950" opacity="0.75"/>
+    </g>
+
+    <!-- Formula snippet & LayerNorm -->
+    <rect x="15" y="125" width="100" height="20" rx="3" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="138" fill="#bc8cff" font-size="8.5" font-family="monospace" text-anchor="middle">Softmax(QKᵀ / √dₖ) V</text>
+
+    <!-- FeedForward Sublayer bar -->
+    <rect x="15" y="152" width="100" height="18" rx="3" fill="#38225d" stroke="#a371f7" stroke-width="1"/>
+    <text x="65" y="164" fill="#e6edf3" font-size="8.5" font-weight="600" font-family="monospace" text-anchor="middle">FFN + LayerNorm</text>
+
+    <text x="65" y="205" fill="#8b949e" font-size="9.5" font-family="monospace" text-anchor="middle">Contextual Reasoning</text>
+  </g>
+
+  <!-- SYNAPTIC CONVERGENCE 3 -> 4 -->
+  <g stroke="url(#synapsePurpleAmber)" stroke-width="1.5" fill="none" opacity="0.9">
+    <path d="M 545 130 C 575 120, 590 105, 620 95" class="synapse-fast"/>
+    <path d="M 545 145 C 575 140, 590 130, 620 130" class="synapse-path"/>
+    <path d="M 545 160 C 575 160, 590 165, 620 165" class="synapse-fast"/>
+    <path d="M 545 175 C 575 180, 590 200, 620 200" class="synapse-path"/>
+    <path d="M 545 190 C 575 200, 590 235, 620 235" class="synapse-fast"/>
+  </g>
+
+  <!-- ==================== STAGE 4: DENSE LATENT EMBEDDINGS (MLP) ==================== -->
+  <g transform="translate(625, 75)">
+    <!-- Label -->
+    <text x="45" y="-7" fill="#f0883e" font-size="11" font-weight="700" font-family="monospace" text-anchor="middle">STAGE 4: LATENT MLP</text>
+    <text x="45" y="6" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="middle">512-Dim Dense Synapses</text>
+
+    <!-- Dense Synapse Interconnect Grid -->
+    <!-- Column 1 Nodes (x=15) -->
+    <!-- Column 2 Nodes (x=75) -->
+    <g stroke="#30363d" stroke-width="0.8" opacity="0.6">
+      <!-- Cross connections -->
+      <line x1="15" y1="30" x2="75" y2="25"/>
+      <line x1="15" y1="30" x2="75" y2="65"/>
+      <line x1="15" y1="30" x2="75" y2="105"/>
+      <line x1="15" y1="30" x2="75" y2="145"/>
+
+      <line x1="15" y1="65" x2="75" y2="25"/>
+      <line x1="15" y1="65" x2="75" y2="65"/>
+      <line x1="15" y1="65" x2="75" y2="105"/>
+      <line x1="15" y1="65" x2="75" y2="145"/>
+
+      <line x1="15" y1="100" x2="75" y2="65"/>
+      <line x1="15" y1="100" x2="75" y2="105"/>
+      <line x1="15" y1="100" x2="75" y2="145"/>
+      <line x1="15" y1="100" x2="75" y2="175"/>
+
+      <line x1="15" y1="135" x2="75" y2="65"/>
+      <line x1="15" y1="135" x2="75" y2="105"/>
+      <line x1="15" y1="135" x2="75" y2="145"/>
+      <line x1="15" y1="135" x2="75" y2="175"/>
+
+      <line x1="15" y1="170" x2="75" y2="105"/>
+      <line x1="15" y1="170" x2="75" y2="145"/>
+      <line x1="15" y1="170" x2="75" y2="175"/>
+    </g>
+
+    <!-- Active High-Energy Synaptic Pulses -->
+    <g stroke="#f0883e" stroke-width="1.4" fill="none">
+      <line x1="15" y1="30" x2="75" y2="65" class="synapse-fast"/>
+      <line x1="15" y1="65" x2="75" y2="25" class="synapse-path"/>
+      <line x1="15" y1="100" x2="75" y2="105" class="synapse-fast"/>
+      <line x1="15" y1="135" x2="75" y2="145" class="synapse-path"/>
+      <line x1="15" y1="170" x2="75" y2="175" class="synapse-fast"/>
+    </g>
+
+    <!-- Column 1 Nodes -->
+    <circle cx="15" cy="30" r="6" fill="#d2a8ff" stroke="#ffffff" stroke-width="1.5" class="pulse-node" filter="url(#neonGlowPurple)"/>
+    <circle cx="15" cy="65" r="5" fill="#58a6ff" stroke="#79c0ff" stroke-width="1.2"/>
+    <circle cx="15" cy="100" r="7" fill="#3fb950" stroke="#56d364" stroke-width="1.5" class="pulse-node" filter="url(#neonGlowGreen)"/>
+    <circle cx="15" cy="135" r="5" fill="#f0883e" stroke="#ffa657" stroke-width="1.2"/>
+    <circle cx="15" cy="170" r="6" fill="#bc8cff" stroke="#d2a8ff" stroke-width="1.5" class="pulse-node"/>
+
+    <!-- Column 2 Nodes -->
+    <circle cx="75" cy="25" r="6" fill="#58a6ff" stroke="#ffffff" stroke-width="1.5" class="pulse-node" filter="url(#neonGlowBlue)"/>
+    <circle cx="75" cy="65" r="7" fill="#f0883e" stroke="#ffa657" stroke-width="1.5" class="pulse-node" filter="url(#neonGlowAmber)"/>
+    <circle cx="75" cy="105" r="6" fill="#3fb950" stroke="#56d364" stroke-width="1.5" class="pulse-node" filter="url(#neonGlowGreen)"/>
+    <circle cx="75" cy="145" r="7" fill="#d2a8ff" stroke="#ffffff" stroke-width="1.5" class="pulse-node" filter="url(#neonGlowPurple)"/>
+    <circle cx="75" cy="175" r="5" fill="#58a6ff" stroke="#79c0ff" stroke-width="1.2"/>
+
+    <text x="45" y="205" fill="#8b949e" font-size="9.5" font-family="monospace" text-anchor="middle">Dense Layer W·X+b</text>
+  </g>
+
+  <!-- SYNAPTIC CONVERGENCE 4 -> 5 -->
+  <g stroke="#ffa657" stroke-width="1.4" fill="none" opacity="0.9">
+    <path d="M 705 100 C 730 95, 745 100, 770 105" class="synapse-fast"/>
+    <path d="M 705 140 C 730 135, 745 135, 770 140" class="synapse-path"/>
+    <path d="M 705 180 C 730 180, 745 175, 770 175" class="synapse-fast"/>
+    <path d="M 705 215 C 730 215, 745 210, 770 210" class="synapse-path"/>
+  </g>
+
+  <!-- ==================== STAGE 5: SOFTMAX PREDICTIONS / OUTPUT ==================== -->
+  <g transform="translate(775, 75)">
+    <!-- Label -->
+    <text x="75" y="-7" fill="#7ee787" font-size="11" font-weight="700" font-family="monospace" text-anchor="middle">STAGE 5: SOFTMAX</text>
+    <text x="75" y="6" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="middle">Production Capabilities</text>
+
+    <!-- Output Box Card -->
+    <rect x="0" y="20" width="150" height="165" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="1.5" filter="url(#neonGlowGreen)"/>
+
+    <!-- Bar 1: Full-Stack Web -->
+    <g transform="translate(12, 35)">
+      <text x="0" y="10" fill="#e6edf3" font-size="9" font-weight="600" font-family="monospace">Full-Stack Apps</text>
+      <text x="125" y="10" fill="#58a6ff" font-size="9" font-weight="700" font-family="monospace" text-anchor="end">99.4%</text>
+      <!-- Track -->
+      <rect x="0" y="15" width="126" height="6" rx="3" fill="#21262d"/>
+      <rect x="0" y="15" width="125" height="6" rx="3" fill="#58a6ff" filter="url(#neonGlowBlue)"/>
+    </g>
+
+    <!-- Bar 2: AI / ML Systems -->
+    <g transform="translate(12, 70)">
+      <text x="0" y="10" fill="#e6edf3" font-size="9" font-weight="600" font-family="monospace">AI / ML Pipelines</text>
+      <text x="125" y="10" fill="#3fb950" font-size="9" font-weight="700" font-family="monospace" text-anchor="end">98.8%</text>
+      <!-- Track -->
+      <rect x="0" y="15" width="126" height="6" rx="3" fill="#21262d"/>
+      <rect x="0" y="15" width="124" height="6" rx="3" fill="#3fb950" filter="url(#neonGlowGreen)"/>
+    </g>
+
+    <!-- Bar 3: LLM & GenAI Agents -->
+    <g transform="translate(12, 105)">
+      <text x="0" y="10" fill="#e6edf3" font-size="9" font-weight="600" font-family="monospace">LLM & GenAI Agents</text>
+      <text x="125" y="10" fill="#d2a8ff" font-size="9" font-weight="700" font-family="monospace" text-anchor="end">97.9%</text>
+      <!-- Track -->
+      <rect x="0" y="15" width="126" height="6" rx="3" fill="#21262d"/>
+      <rect x="0" y="15" width="123" height="6" rx="3" fill="#d2a8ff" filter="url(#neonGlowPurple)"/>
+    </g>
+
+    <!-- Bar 4: Algorithmic DSA -->
+    <g transform="translate(12, 140)">
+      <text x="0" y="10" fill="#e6edf3" font-size="9" font-weight="600" font-family="monospace">Algorithmic DSA</text>
+      <text x="125" y="10" fill="#f0883e" font-size="9" font-weight="700" font-family="monospace" text-anchor="end">99.1%</text>
+      <!-- Track -->
+      <rect x="0" y="15" width="126" height="6" rx="3" fill="#21262d"/>
+      <rect x="0" y="15" width="125" height="6" rx="3" fill="#f0883e" filter="url(#neonGlowAmber)"/>
+    </g>
+
+    <text x="75" y="205" fill="#8b949e" font-size="9.5" font-family="monospace" text-anchor="middle">Optimal Loss: 0.012</text>
+  </g>
+
+  <!-- Bottom Architecture Metrics Footer -->
+  <g transform="translate(24, 320)">
+    <line x1="0" y1="0" x2="912" y2="0" stroke="#21262d" stroke-width="1"/>
+    <g transform="translate(10, 16)" font-family="monospace" font-size="10.5">
+      <text x="0" y="10" fill="#8b949e">
+        <tspan fill="#58a6ff" font-weight="700">● 1.2M Parameters</tspan> &nbsp;|&nbsp; 
+        <tspan fill="#3fb950" font-weight="700">● FLOPs: 4.8 GFLOPs</tspan> &nbsp;|&nbsp; 
+        <tspan fill="#bc8cff" font-weight="700">● Receptive Field: 224px</tspan> &nbsp;|&nbsp; 
+        <tspan fill="#f0883e" font-weight="700">● Precision: FP16 TensorCore</tspan> &nbsp;|&nbsp; 
+        <tspan fill="#7ee787" font-weight="700">● Continuous Live Inference</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

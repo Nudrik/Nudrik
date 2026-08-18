@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);">
+  <defs>
+    <linearGradient id="textGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#3fb950"/>
+      <stop offset="100%" stop-color="#d2a8ff"/>
+    </linearGradient>
+    <linearGradient id="textGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0883e"/>
+      <stop offset="50%" stop-color="#7ee787"/>
+      <stop offset="100%" stop-color="#58a6ff"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#3fb950" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#d2a8ff" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="headerGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="#58a6ff" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <!-- Background border -->
+  <rect x="2" y="2" width="796" height="196" rx="12" fill="none" stroke="url(#borderGrad)" stroke-width="1"/>
+
+  <!-- Dot matrix background -->
+  <rect x="0" y="0" width="800" height="200" fill="url(#dotPattern)" opacity="0.5"/>
+
+  <!-- Animated circuit-like decorative lines -->
+  <line x1="20" y1="30" x2="200" y2="30" stroke="#58a6ff" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+  </line>
+  <line x1="600" y1="170" x2="780" y2="170" stroke="#3fb950" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="20" y1="170" x2="120" y2="170" stroke="#d2a8ff" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Corner decorations -->
+  <rect x="20" y="20" width="30" height="30" rx="3" fill="none" stroke="#58a6ff" stroke-width="0.5" opacity="0.4"/>
+  <rect x="750" y="20" width="30" height="30" rx="3" fill="none" stroke="#3fb950" stroke-width="0.5" opacity="0.4"/>
+  <rect x="20" y="150" width="30" height="30" rx="3" fill="none" stroke="#d2a8ff" stroke-width="0.5" opacity="0.4"/>
+  <rect x="750" y="150" width="30" height="30" rx="3" fill="none" stroke="#f0883e" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- AI/ML decorative elements -->
+  <!-- Neural node decor left -->
+  <g transform="translate(60, 100)" opacity="0.4">
+    <circle cx="0" cy="0" r="3" fill="#58a6ff" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="0" y1="0" x2="15" y2="-15" stroke="#58a6ff" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="15" y2="0" stroke="#58a6ff" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="15" y2="15" stroke="#58a6ff" stroke-width="0.5" opacity="0.3"/>
+    <circle cx="15" cy="-15" r="2" fill="#3fb950">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="15" cy="0" r="2" fill="#d2a8ff">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="15" cy="15" r="2" fill="#f0883e">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Neural node decor right -->
+  <g transform="translate(730, 100)" opacity="0.4">
+    <circle cx="0" cy="0" r="3" fill="#3fb950" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="0" y1="0" x2="-15" y2="-15" stroke="#3fb950" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="-15" y2="0" stroke="#3fb950" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="-15" y2="15" stroke="#3fb950" stroke-width="0.5" opacity="0.3"/>
+    <circle cx="-15" cy="-15" r="2" fill="#58a6ff">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-15" cy="0" r="2" fill="#d2a8ff">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-15" cy="15" r="2" fill="#f0883e">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Main Name with gradient -->
+  <text x="400" y="85" text-anchor="middle" font-family="'Segoe UI', 'Arial', sans-serif" font-size="48" font-weight="bold" fill="url(#textGrad1)" filter="url(#headerGlow)">
+    NUDRIK RAJU
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Tagline with typing effect -->
+  <text x="400" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" fill="#8b949e">
+    <tspan fill="#58a6ff">></tspan>
+    <tspan fill="#8b949e"> Full Stack Developer </tspan>
+    <tspan fill="#3fb950">|</tspan>
+    <tspan fill="#8b949e"> AI/ML Engineer </tspan>
+    <tspan fill="#3fb950">|</tspan>
+    <tspan fill="#8b949e"> DSA Enthusiast</tspan>
+    <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
+  </text>
+
+  <!-- Animated cursor -->
+  <text x="580" y="125" text-anchor="middle" font-family="monospace" font-size="16" fill="#58a6ff">
+    <tspan>▌</tspan>
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Bottom sub-title -->
+  <text x="400" y="155" text-anchor="middle" font-family="monospace" font-size="11" fill="#6e7681" letter-spacing="4">
+    BUILDING INTELLIGENT APPLICATIONS WITH CODE
+  </text>
+
+  <!-- Glowing dot -->
+  <circle cx="400" cy="175" r="2" fill="#7ee787" filter="url(#softGlow)">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
